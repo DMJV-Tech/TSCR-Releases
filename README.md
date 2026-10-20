@@ -1,8 +1,11 @@
 # TSCR – Top Secret Chrono Crypt
 
 **Version 3.0.0.0 — Production Release**
-**Premium Hybrid Data & Secrets Security Solution**
+
+**Premium Hybrid Data, Secrets & Identity Security Platform**
+
 *Chrono-Entropic Encryption Engine*
+
 *Time-variable encryption with controlled unpredictability at the core of a multi-platform protection system for files, folders, text, keys, passwords, and private secrets.*
 
 **Share YOUR SECRETS only when you want to. 😉😎**
@@ -13,7 +16,7 @@
 
 **TSCR v3.0.0.0** is the current production release line of TSCR – Top Secret Chrono Crypt. It builds on the established Windows/Linux production distribution and extends the same core TSCR functional model toward desktop and mobile builds. Development and release targets include Windows, Linux, macOS, Android, and iOS, with x86_64 and ARM64/arm64 as the primary architecture targets. Individual platform builds may be published successively, so actual availability depends on the current release artifacts and platform.
 
-TSCR v3.0 retains the production website and distribution channel, live purchase and activation workflow, automatic/deferred/offline activation modes, checkout QR codes, PayPal development-support integration, legal-document handling, multilingual Help/About system, protected fallback language module, and TSCR Tray/app-interface workflow introduced in the production line. It additionally brings **Home navigation**, **Authenticator**, the expanded **Secret Generator**, shared desktop/mobile workflows, the current multilingual/TSCR-AI runtime, and the v3.0 user-interface model into the same product line.
+TSCR v3.0 retains the production website and distribution channel, live purchase and activation workflow, automatic/deferred/offline activation modes, checkout QR codes, PayPal development-support integration, legal-document handling, multilingual Help/About system, protected fallback language module, and TSCR Tray/app-interface workflow introduced in the production line. It additionally brings **Home navigation**, an expanded **Authenticator** with TOTP/HOTP and Passkey/FIDO2/WebAuthn functionality, **TSCR Browser Link** integration for Chrome/Edge/Firefox, **Loyalty Card** support in Secret Vault, the expanded **Secret Generator** with QR/barcode display, shared desktop/mobile workflows, and the multilingual/TSCR-AI runtime into the same product line. Browser extensions and platform-specific authentication transports have their own testing and publication status.
 
 TSCR v3.0.0.0 represents the next technological stage of the planned **TSCR Data & Secrets Security Ecosystem**.
 
@@ -22,7 +25,7 @@ TSCR v3.0.0.0 represents the next technological stage of the planned **TSCR Data
 ## Overview
 
 **TSCR – Top Secret Chrono Crypt** is a proprietary, multi-platform data protection and encryption system designed for individuals, professionals, organizations, and companies that need direct control over sensitive data, private files and folders, keys, passwords, tokens, authentication data, notes, and other personal or business secrets.
-Its current product definition is **Premium Hybrid Data & Secrets Security Solution** — a **Premium Hybrid Security & Cryptography Solution for Data & Secrets**.
+Its current product definition is **Premium Hybrid Data, Secrets & Identity Security Platform** — bringing together cryptography, secrets management, and digital authentication.
 
 TSCR is built around an original **chrono-entropic architecture** in which **time-dependent transformation** and **controlled unpredictability** are treated as structural security parameters, not as decorative or post-processing effects. The goal is not merely declarative encryption, but practical, serious, and trustworthy data protection.
 
@@ -32,7 +35,7 @@ Rather than acting as a single fixed algorithm or a simple wrapper around existi
 
 This architecture enables different protection profiles designed to adapt encryption behaviour to specific needs — from balanced everyday use, through AES-integrated processing for larger files and data volumes, to **TOP SECRET** TSCR for **PARANOID-LEVEL** protection.
 
-TSCR brings together practical data protection, local encryption, text and file/folder workflows, secret management, TOTP/HOTP authentication, secure-value generation, multilingual interface support, Home navigation, desktop and mobile working interfaces, desktop tray/shortcut access, system diagnostics, update handling, production purchase and activation, legal-document access, and controlled application-integrity / anti-abuse protection into one integrated environment. In that way, it represents a usable hybrid between an advanced data-protection tool, a personal/business secret-management system, and a practical cryptography-focused security environment.
+TSCR brings together practical data protection, local encryption, text and file/folder workflows, secret management, TOTP/HOTP and Passkey/FIDO2 authentication, browser-linked credential workflows, secure-value generation, multilingual interface support, Home navigation, desktop and mobile working interfaces, desktop tray/shortcut access, system diagnostics, update handling, production purchase and activation, legal-document access, and controlled application-integrity / anti-abuse protection into one integrated environment. In that way, it represents a usable hybrid between an advanced data-protection tool, a personal/business secret-management system, and a practical cryptography-focused security environment.
 
 Core protection workflows are **local-first** and do not require a permanent cloud connection or external trust layer. Online services are used only for defined operations that require network communication, such as purchase, payment confirmation, activation synchronization, selected backup/migration functions, updates, and support workflows.
 
@@ -49,7 +52,7 @@ The desktop application includes a dedicated app-interface layer for system tray
 | Version | 3.0.0.0 |
 | Release status | Production Release |
 | Previous line | TimeCRYPT / ECCrypt – ErraticChronoCRYPT |
-| Tagline | Premium Hybrid Data & Secrets Security Solution |
+| Product definition | Premium Hybrid Data, Secrets & Identity Security Platform |
 | Engine | Chrono-Entropic Encryption Engine |
 | Main file extension | `.tscr` |
 | Primary model | Multi-platform, local-first data and secrets protection |
@@ -71,8 +74,8 @@ The term **“Top Secret”** is used as a product name and security-profile des
 |---|---|---|---|
 | Windows | Desktop | x86_64 | Production platform |
 | Linux | Desktop | x86_64 | Production platform |
-| macOS | Desktop | x86_64 / ARM64 | Development / release target |
-| Android | Mobile | arm64 | Mobile release target |
+| macOS | Desktop | x86_64 / ARM64 | Built — testing/release pending |
+| Android | Mobile | arm64 | Production platform |
 | iOS | Mobile | ARM64 | Development / release target |
 ---
 
@@ -131,12 +134,15 @@ The main TSCR capabilities are grouped below to provide a concise product overvi
 
 ### Secrets & Authentication
 
-- **Trezor Tajni / Secret Vault** for structured local secret storage,
+- **Trezor Tajni / Secret Vault** for structured local secret storage, including **Loyalty Card** entries with QR/barcode display,
 - **Online Vault** support for encrypted server/database-backed backup and migration workflows,
-- **Authenticator** for TOTP/HOTP 2FA accounts and codes,
+- **Authenticator** for TOTP/HOTP 2FA and Passkey/FIDO2/WebAuthn credentials,
+- **TSCR Browser Link** extensions for Chrome, Edge, and Firefox: login fill/save/update, Passkeys, TOTP, payment cards, and Secret Generator integration,
 - QR/URI import, Google migration import, QR export, and encrypted `.tscrauth` backup/import,
+- platform-dependent **FIDO2 HYBRID** QR/BLE authentication and Android **CXF** credential-import integration,
 - **Secret Generator** with Password, TSCR Key, Passphrase, TSCR Passphrase, Cryptographic Key, PIN, Token, API Key, UUID, Username, WiFi password, Card, and Short secure phrase output types,
 - **TSCR Estimator** for heuristic strength, entropy, and approximate crack-time evaluation,
+- **Show QR / Show BarCode** for displaying generated or manually entered values as scannable codes where supported,
 - multilingual passphrase dictionaries and **LangMIX** support.
 
 ### Interface, Language & Diagnostics
@@ -205,6 +211,7 @@ The vault is intended for:
 - accounts,
 - banking data,
 - payment card data,
+- loyalty cards with QR/barcodes,
 - API keys,
 - tokens,
 - secure notes,
@@ -221,17 +228,20 @@ Secret Vault supports workflows such as:
 - import secrets,
 - export vault data,
 - use Secret Generator directly from the vault workflow,
-- link relevant Vault records with Authenticator accounts.
+- link relevant Vault records with Authenticator accounts,
+- store and display supported **Loyalty Card** QR/barcodes for use at checkout.
 
 Secrets are stored in a local TSCR-protected vault, so even if an attacker obtains the vault file, the stored content is not intended to be usable without the required protection context.
 
 TSCR also includes **Online Vault** support as a server/database-backed backup and migration option for secrets. Its purpose is to extend Secret Vault workflows beyond local-only storage while preserving the core TSCR principle: secret payloads should be stored in encrypted form so that the secret itself is not available in an untrusted environment.
 
+A **Loyalty Card** entry can hold a card number/code or an imported/scanned QR/barcode image. On supported Android builds the camera can scan these codes; users can later display a saved code for scanning at checkout. This does not create a store membership.
+
 ---
 
 ## Authenticator
 
-TSCR v3.0 includes a built-in **Authenticator** for managing **TOTP/HOTP 2FA accounts and codes**.
+TSCR v3.0 includes a built-in **Authenticator** for **TOTP/HOTP codes** and **Passkey/FIDO2/WebAuthn authentication**. Passkeys use public-key cryptography and are stored in the TSCR-protected Authenticator store; they are not TOTP codes.
 
 Main capabilities include:
 
@@ -243,9 +253,23 @@ Main capabilities include:
 - encrypted **`.tscrauth`** backup and import,
 - optional plaintext JSON export with a clear security warning,
 - code copying with automatic clipboard clearing,
-- linking an Authenticator account to a corresponding Secret Vault record.
+- linking an Authenticator account to a corresponding Secret Vault record,
+- creating, listing, selecting, using, importing, and deleting supported **Passkey** credentials, with explicit user approval,
+- browser-local and cross-device authentication through supported **LOCAL/Direct** and **HYBRID** transports.
 
 On Android, QR codes can be scanned directly with the device camera. TOTP codes refresh according to their time interval, while HOTP uses a counter.
+
+### Passkeys, Browser Link, and HYBRID
+
+**TSCR Browser Link** connects a locally running desktop TSCR instance to **Chrome, Edge, or Firefox**. With an approved browser profile, users can select and fill matching Secret Vault logins, save or update credentials, request TOTP codes, fill selected HTTPS payment-card forms after TSCR verification, and use Secret Generator. Passkey operations require the appropriate WebAuthn flow and TSCR user confirmation. Generated secrets are **not automatically saved**; Save/Update is a separate approved operation. The extension does not permanently store Vault passwords, payment-card details, or TOTP secrets.
+
+Initial pairing requires approval in TSCR. Later connections are normally automatic while authorization remains valid; the extension can be manually disconnected/reconnected. WebAuthn routing set to **TSCR Browser Link** differs from **System/native** mode, which delegates the request to the browser/OS and does not necessarily offer the same Passkeys or a cross-device QR option.
+
+**FIDO2 HYBRID** uses the browser-provided `FIDO:/` QR, Bluetooth Low Energy proximity signalling, an authenticated encrypted connection, and CTAP2 requests. Actual availability depends on browser, platform, Bluetooth permissions and the native transport adapter. **Windows HYBRID reference flows have been tested; the Linux BlueZ adapter remains planned.** A working Linux Bluetooth adapter by itself does not complete TSCR Linux HYBRID.
+
+On supported Android versions, **CXF (Credential Exchange Format)** import is a separate system-mediated Passkey transfer workflow. It is **not** the same as HYBRID QR/Bluetooth sign-in, and availability depends on Android and the source credential manager.
+
+**Browser Link status (19 October 2026):** extension **v0.4.28 TEST** is undergoing verification for all three browsers; do not assume it is already published in the browser extension stores or that every target platform has completed end-to-end tests.
 
 ---
 
@@ -276,6 +300,8 @@ The generator also includes the practical **TSCR Estimator** for approximate str
 Passphrase generation can use localized and multilingual dictionaries, including **LangMIX** mode for combining words from multiple language dictionaries. **TSCR Passphrase** extends this word-based multilingual model with an additional Unicode layer through Smart Unicode or Full Unicode mode.
 
 **Cryptographic Key** generates cryptographically random **128, 192, 256, or 512-bit** keys in **HEX**, **Base64**, or **URL-safe Base64** format.
+
+The **Show QR** and **Show BarCode** controls display supported generated values or manually entered text as scannable codes. Barcode availability depends on the content and the selected format; QR supports a wider range of text.
 
 ---
 
@@ -433,6 +459,12 @@ TSCR v3.0 is developed for **Windows, Linux, macOS, Android, and iOS**, with x86
 
 For Android and other additional platform builds, use only an official TSCR distribution channel explicitly listed by the project.
 
+### Browser Link — Chrome, Edge, Firefox
+
+Browser Link is distributed separately from the TSCR desktop application. Use official store listings **only after they are published** or a test/standalone package explicitly provided by the TSCR project. In a development/test ZIP, Chrome and Edge can load the corresponding unpacked extension directories using **Extensions → Developer mode → Load unpacked**. Firefox development builds can be loaded temporarily through **`about:debugging`**; temporary installations normally disappear after a browser restart.
+
+Start desktop TSCR first, then approve the browser profile when prompted on first connection. Approved profiles normally reconnect automatically; a manual Connect/Disconnect action remains available.
+
 Exact package names and version numbers depend on the current release.
 
 ---
@@ -474,14 +506,16 @@ The Files/Folders area also includes utility **Hash**, **Zip**, and **UnZip** fu
 2. Add, edit, search, copy, import, or export secrets.
 3. Use Secret Generator when you need a new strong value.
 4. Keep backups/export files protected.
+5. For loyalty cards, save a supported QR/barcode or card number and use the display function when it is needed.
 
 ### Working with Authenticator
 
 1. Open **Authenticator**.
 2. Add a TOTP/HOTP account manually or import it through QR code, QR image, URI, or Google migration data.
-3. Use or copy the generated code for authentication.
-4. Link the account with a corresponding Secret Vault record when appropriate.
-5. Use encrypted **`.tscrauth`** backup/import for protected migration or backup.
+3. Use or copy the generated code for authentication; link the account to a Secret Vault record when appropriate.
+4. For Passkeys, use the supported WebAuthn/Browser Link flow, select or create the relevant credential, and confirm the request in TSCR.
+5. For supported cross-device authentication, follow the FIDO2 HYBRID `FIDO:/` QR/BLE workflow. On Android, CXF import is a separate transfer option where offered.
+6. Use encrypted **`.tscrauth`** backup/import for protected migration or backup.
 
 ### Using Secret Generator
 
@@ -489,7 +523,15 @@ The Files/Folders area also includes utility **Hash**, **Zip**, and **UnZip** fu
 2. Select the required secret type.
 3. Configure the relevant parameters.
 4. Generate and review the value and TSCR Estimator output where applicable.
-5. Copy the result or insert it into the appropriate Secret Vault field.
+5. Copy the result, insert it into the appropriate Secret Vault field, or use **Show QR / Show BarCode** where supported.
+
+### Browser Link Quick Start
+
+1. Start desktop TSCR and open the Chrome, Edge, or Firefox Browser Link extension.
+2. Approve the browser profile in TSCR once; subsequent connections are normally automatic.
+3. On the matching website, choose the saved login, Passkey, TOTP account, or card as applicable.
+4. Confirm security-sensitive actions in TSCR. Use **Save/Update** explicitly when you want generated or newly entered credentials stored.
+5. For WebAuthn, **System/native** mode returns control to the browser/OS; it is not the same as TSCR Browser Link.
 
 ### Quick Access, Tray, and Shortcuts
 
@@ -527,6 +569,10 @@ A new time-limited license starts from successful activation. It does not extend
 - Use strong, unique keys and passwords.
 - Use **Secret Generator → TSCR Key** when you want a generated high-entropy Unicode TSCR key.
 - Prefer encrypted **`.tscrauth`** Authenticator backup/import over plaintext JSON export.
+- Maintain a separate recovery method before removing or transferring Passkeys.
+- Approve Browser Link pairing only for your own browser profile; verify the website and account before approving Passkey, payment-card, or Save/Update requests.
+- Do not assume that System/native browser mode offers the TSCR credentials or HYBRID QR flow.
+- Use card autofill only on trusted HTTPS forms; HTTP traffic is not encrypted.
 - Use TOP SECRET mode for highly sensitive compact data.
 - Use TSCR AES mode for larger files and folders.
 - Keep Secret Vault exports protected.
@@ -565,6 +611,8 @@ The applicable legal-document versions are available directly through the applic
 
 **TSCR v3.0.0.0 represents the next development stage of the complete product and technological core of the future TSCR Data & Secrets Security Ecosystem.**
 
+Existing v3.0 development includes the TSCR Browser Link browser-integration layer and Passkey/FIDO2 authentication support; remaining Linux HYBRID/BlueZ and platform-native provider work is a platform-specific follow-up, not a replacement of the shared FIDO credential core.
+
 The planned development direction includes:
 
 - **TSCR CryptoWallet** – a secure, platform-independent software wallet and security wrapper for major cryptocurrencies, built on TSCR’s protected black-box architecture to safeguard private keys, recovery seeds, wallet data, and signing workflows while preserving the native standards and transaction mechanisms of each supported blockchain
@@ -572,10 +620,10 @@ The planned development direction includes:
 - **TSCR SecureCode engine/framework** as a language-agnostic system for protecting and controlling the execution of application code,
 - **TopSecretChat** for secure and private communication,
 - additional mobile and companion applications,
-- service, API, CLI, shell, and browser-integration layers,
+- further service, API, CLI, shell, and browser-integration capabilities,
 - additional modules for protecting data, secrets, identity, authentication, application code, and digital communication.
 
-The objective is for TSCR to evolve from the current **Premium Hybrid Data & Secrets Security Solution** into the broader modular **TSCR Data & Secrets Security Ecosystem**, while extending its role as a **Premium Hybrid Security & Cryptography Solution for Data & Secrets**.
+The objective is for TSCR to evolve from the current **Premium Hybrid Data, Secrets & Identity Security Platform** into the broader modular **TSCR Data & Secrets Security Ecosystem**, while extending its role as a **Premium Hybrid Security, Cryptography & Authentication Solution for Data, Secrets & Digital Identity**.
 
 ---
 
@@ -604,6 +652,8 @@ Today, TSCR is developed as a standalone proprietary security product focused on
 Release: **Production Release**
 Release date: **2026-09-28**
 
+Documentation updated: **2026-10-19**
+
 ---
 
 ## Author
@@ -630,7 +680,7 @@ For licensing, permissions, commercial use, or support, contact:
 
 ## Disclaimer
 
-TSCR is a proprietary **Premium Hybrid Data & Secrets Security Solution**.
+TSCR is a proprietary **Premium Hybrid Data, Secrets & Identity Security Platform**.
 
 The term **“Top Secret”** is used as a brand name and security profile designation. It does not imply governmental classification, approval, certification, or endorsement.
 
