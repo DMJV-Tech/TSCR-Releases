@@ -130,7 +130,7 @@ The main TSCR capabilities are grouped below to provide a concise product overvi
 - three main protection profiles: **TSCR**, **TOP SECRET**, and **TSCR AES**,
 - full-Unicode TSCR encryption keys up to **64 characters / 2048 bits**,
 - **Multi-TSCR** for generating multiple independently encrypted versions of the same input,
-- Hash/checksum, Zip, and UnZip utility functions.
+- Hash/checksum and **Universal TSCR PackIt/UnpackIt** utilities for **ZIP, TAR, TAR.GZ, TAR.BZ2, and TAR.XZ** archives.
 
 ### Secrets & Authentication
 
@@ -496,9 +496,15 @@ Exact package names and version numbers depend on the current release.
 
 Folders are handled through a controlled **ZIP → encrypt** workflow: TSCR temporarily creates a ZIP archive from the selected folder, encrypts it, and then removes the temporary ZIP when the workflow completes successfully.
 
-### Using Hash, Zip, and UnZip
+### Using Hash and Universal TSCR PackIt/UnpackIt
 
-The Files/Folders area also includes utility **Hash**, **Zip**, and **UnZip** functions. Hash/checksum values are calculated for files and archives. For folder-level integrity checks, create a ZIP archive first and then calculate the hash of the resulting ZIP file.
+The **Files/Folders** area includes **Hash** and **Universal TSCR PackIt/UnpackIt** utilities for convenient file and folder archiving, compression, extraction, and integrity checks.
+
+- **PackIt:** select a file or folder, choose **ZIP** (default), **TAR**, **TAR.GZ**, **TAR.BZ2**, or **TAR.XZ**, and click **PackIt** to create an archive.
+- **UnpackIt:** select a supported archive and click **UnpackIt**. The archive format is detected automatically; no format selection is needed for extraction.
+- **Hash:** calculate a hash/checksum for a selected file or archive. To check a folder as a single file, first pack it into an archive (for example, ZIP), then calculate the hash of that archive.
+
+PackIt/UnpackIt are general-purpose archive utilities, **not encryption**. TSCR folder encryption retains its separate **ZIP → encrypt** workflow.
 
 ### Working with Secret Vault
 
@@ -652,7 +658,7 @@ Today, TSCR is developed as a standalone proprietary security product focused on
 Release: **Production Release**
 Release date: **2026-09-28**
 
-Documentation updated: **2026-10-19**
+Documentation updated: **2026-10-22**
 
 ---
 
