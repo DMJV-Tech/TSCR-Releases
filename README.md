@@ -6,7 +6,7 @@
 
 *Chrono-Entropic Encryption Engine*
 
-*Time-variable encryption with controlled unpredictability at the core of a multi-platform protection system for files, folders, text, keys, passwords, and private secrets.*
+*Time-variable encryption with controlled unpredictability at the core of a multi-platform protection system for files, folders, text, digital identities, keys, passwords, and private secrets.*
 
 **Share YOUR SECRETS only when you want to. 😉😎**
 
@@ -14,11 +14,24 @@
 
 ## Production Release Status
 
-**TSCR v3.0.0.0** is the current production release line of TSCR – Top Secret Chrono Crypt. It builds on the established Windows/Linux production distribution and extends the same core TSCR functional model toward desktop and mobile builds. Development and release targets include Windows, Linux, macOS, Android, and iOS, with x86_64 and ARM64/arm64 as the primary architecture targets. Individual platform builds may be published successively, so actual availability depends on the current release artifacts and platform.
+**TSCR v3.0.0.0** marks a major step beyond v2.5's *Premium Data & Secrets Protection Tool*: it unifies encryption, secret management, identity and authentication, desktop/mobile workflows, and browser integration as a **Premium Hybrid Data, Secrets & Identity Security Platform**.
 
-TSCR v3.0 retains the production website and distribution channel, live purchase and activation workflow, automatic/deferred/offline activation modes, checkout QR codes, PayPal development-support integration, legal-document handling, multilingual Help/About system, protected fallback language module, and TSCR Tray/app-interface workflow introduced in the production line. It additionally brings **Home navigation**, an expanded **Authenticator** with TOTP/HOTP and Passkey/FIDO2/WebAuthn functionality, **TSCR Browser Link** integration for Chrome/Edge/Firefox, **Loyalty Card** support in Secret Vault, the expanded **Secret Generator** with QR/barcode display, shared desktop/mobile workflows, and the multilingual/TSCR-AI runtime into the same product line. Browser extensions and platform-specific authentication transports have their own testing and publication status.
+The v3.0 production line covers **Windows and Linux (x64/ARM64)** and **Android (ARM64)**. Experimental **macOS Intel/Apple Silicon** builds are being prepared for testing; **iOS is planned**. Distribution and validation progress differ by platform, so consult the [official release assets](https://github.com/DMJV-Tech/TSCR-Releases/releases) for what is actually published.
 
-TSCR v3.0.0.0 represents the next technological stage of the planned **TSCR Data & Secrets Security Ecosystem**.
+The existing licensing, activation, multilingual Help/About, tray/shortcut, offline-first and protected-runtime workflows remain part of TSCR. The new release extends them with a redesigned interface, integrated Authenticator and Browser Link, enhanced Secret Vault and Secret Generator, and improved update and language workflows.
+
+### What's New Compared with v2.5
+
+- **Genuine desktop/mobile/tablet coverage:** Android ARM64 application, Windows/Linux ARM64 targets, experimental macOS builds and a planned iOS port.
+- **Modern interface:** refreshed visual design, **Home** as the primary navigation hub, touch-friendly layouts, **zoom** support, and updated Help/About.
+- **Authenticator & identity:** integrated TOTP/HOTP, Passkeys/FIDO2/WebAuthn, LOCAL/Direct and supported HYBRID workflows; companion authentication across supported mobile/desktop environments and Windows Native FIDO integration.
+- **TSCR Browser Link:** Chrome, Edge and Firefox extensions for approved login, TOTP, Passkey, payment-card and Secret Generator workflows.
+- **Secret Vault:** updated interface and practical **Loyalty Cards** with QR/barcode display, alongside improved Vault/Authenticator integration.
+- **Secret Generator:** independent main area, additional secret types including TSCR Key and Cryptographic Key, TSCR Estimator, and **Show QR / Show BarCode**.
+- **Multilingual support:** 35 supported languages, expanded resources and enhanced AI-assisted language/dictionary generation with validation and recovery.
+- **Platform-aware updates:** refined distribution/update workflows, plus numerous usability and security improvements.
+
+TSCR v3.0 is a foundation for the planned **TSCR Data & Secrets Security Ecosystem**.
 
 ---
 
@@ -29,7 +42,7 @@ Its current product definition is **Premium Hybrid Data, Secrets & Identity Secu
 
 TSCR is built around an original **chrono-entropic architecture** in which **time-dependent transformation** and **controlled unpredictability** are treated as structural security parameters, not as decorative or post-processing effects. The goal is not merely declarative encryption, but practical, serious, and trustworthy data protection.
 
-Unlike traditional tools that primarily rely on long-known, widely analysed, and standardized cryptographic patterns, TSCR introduces its own proprietary chrono-entropic model with strong multi-layer encryption and variable key evolution. This original black-box engine design, combined with key-assisted protection logic, native TSCR profiles, AES integration, and unified workflows for protecting text, files, folders, and secrets, gives TSCR a distinct security identity and an important competitive advantage.
+Unlike traditional tools that primarily rely on long-known, widely analysed, and standardized cryptographic patterns, TSCR introduces its own proprietary chrono-entropic model with strong multi-layer encryption and variable key evolution. This original black-box engine design, combined with key-assisted protection logic, native TSCR profiles, AES integration, and unified workflows for protecting text, files, folders, secrets and digital ID-s, gives TSCR a distinct security identity and an important competitive advantage.
 
 Rather than acting as a single fixed algorithm or a simple wrapper around existing encryption standards, TSCR is structured as a layered protection framework composed of a proprietary core engine, multiple operational encryption profiles, unified workflows for text, files, folders, and secrets, local-first storage and protection logic, and multiple interface environments.
 
@@ -70,20 +83,26 @@ The term **“Top Secret”** is used as a product name and security-profile des
 
 ## Platform Targets and Availability
 
-| Platform | Interface | Primary architecture | Position in v3.0 |
+| Platform | Interface | Architecture | v3.0 status |
 |---|---|---|---|
-| Windows | Desktop | x86_64 | Production platform |
-| Linux | Desktop | x86_64 | Production platform |
-| macOS | Desktop | x86_64 / ARM64 | Built — testing/release pending |
-| Android | Mobile | arm64 | Production platform |
-| iOS | Mobile | ARM64 | Development / release target |
+| **Windows** | Desktop | x86_64 / ARM64 | Release binaries prepared; Microsoft Store listing may still carry v2.5 until updated |
+| **Linux** | Desktop | x86_64 / ARM64 | Release binaries prepared; ARM64 build verified, runtime validation pending |
+| **Android** | Mobile | ARM64-v8a | Signed APK/AAB builds prepared; Google Play publication/testing pending |
+| **macOS** | Desktop | x86_64 / Apple Silicon ARM64 | Experimental test-build workflow; publication and testing pending |
+| **iOS** | Mobile | ARM64 | Planned — not included in this release |
+
+**Availability is determined by the assets attached to the official release**, not by the target-platform list alone. Some platforms, stores and browser integrations will be published or updated successively.
+
+### Release Packages
+
+- **Windows/Linux:** individual executables and platform/architecture-specific ZIP packages containing the executable, `README.txt` and `LICENSE.txt`.
+- **Android:** signed APK for direct installation, plus an APK/README/LICENSE ZIP; the AAB is intended for Google Play distribution rather than manual installation.
+- **macOS:** separate Intel and Apple Silicon `.app` ZIP packages when the experimental builds have passed their build checks and are published.
+- **Browser Link:** separate ZIP packages for Chrome, Edge and Firefox, independent of future browser-store listings.
+
+**Official releases:** https://github.com/DMJV-Tech/TSCR-Releases/releases
+
 ---
-
-
-Individual build availability depends on the current release artifacts and platform. The same core TSCR functional model is intended to remain consistent across supported builds.
-
----
-
 
 ## Core Concepts
 
@@ -137,7 +156,7 @@ The main TSCR capabilities are grouped below to provide a concise product overvi
 - **Trezor Tajni / Secret Vault** for structured local secret storage, including **Loyalty Card** entries with QR/barcode display,
 - **Online Vault** support for encrypted server/database-backed backup and migration workflows,
 - **Authenticator** for TOTP/HOTP 2FA and Passkey/FIDO2/WebAuthn credentials,
-- **TSCR Browser Link** extensions for Chrome, Edge, and Firefox: login fill/save/update, Passkeys, TOTP, payment cards, and Secret Generator integration,
+- **TSCR Browser Link** extensions for Chrome, Edge, and Firefox: approved login fill/save/update, Passkeys, TOTP, payment cards, and Secret Generator integration,
 - QR/URI import, Google migration import, QR export, and encrypted `.tscrauth` backup/import,
 - platform-dependent **FIDO2 HYBRID** QR/BLE authentication and Android **CXF** credential-import integration,
 - **Secret Generator** with Password, TSCR Key, Passphrase, TSCR Passphrase, Cryptographic Key, PIN, Token, API Key, UUID, Username, WiFi password, Card, and Short secure phrase output types,
@@ -148,8 +167,9 @@ The main TSCR capabilities are grouped below to provide a concise product overvi
 ### Interface, Language & Diagnostics
 
 - **Home** as the primary navigator on desktop and mobile interfaces,
+- refreshed interface, touch-friendly layouts and **zoom controls**,
 - shared desktop/mobile functional model,
-- multilingual GUI runtime with **36 language objects** in the current v3.0 NLF,
+- multilingual GUI runtime with **35+ supported interface languages**; the current v3.0 NLF,
 - **TSCR-AI language generation** workflow for additional interface languages and dictionaries,
 - desktop **TSCR Tray** and global/desktop shortcut integration,
 - auxiliary **SysPad** utility,
@@ -157,7 +177,7 @@ The main TSCR capabilities are grouped below to provide a concise product overvi
 
 ### Licensing, Updates & Runtime Protection
 
-- fully automated update support,
+- **platform-aware automatic update support**, including official release/store distribution paths where applicable,
 - production purchase and activation workflow with automatic, deferred, and offline/manual activation modes,
 - **PRO-03, PRO-06, PRO-12, PRO-24, and LEGACY** license plans,
 - checkout link and QR-code access,
@@ -197,7 +217,7 @@ Before the AES layer, data is additionally prepared, processed, pre-encrypted, a
 
 This mode is generally the most practical choice for larger files, folders, and bulk data.
 
-For text, compact secrets, short payloads, and smaller files, native TSCR profiles can be highly efficient: practical tests have shown that TSCR, and in some compact-payload scenarios even TOP SECRET TSCR, may achieve roughly 10–20x faster encryption with lower output overhead compared to AES-based processing, despite modern CPU-level AES acceleration.
+For compact text, short secrets and smaller payloads, native TSCR profiles can be efficient. Selected internal tests have reported substantial speed and output-size advantages for these workloads over the TSCR AES workflow; results vary by data, environment and encryption profile and should not be treated as universal benchmark guarantees.
 
 ---
 
@@ -257,11 +277,11 @@ Main capabilities include:
 - creating, listing, selecting, using, importing, and deleting supported **Passkey** credentials, with explicit user approval,
 - browser-local and cross-device authentication through supported **LOCAL/Direct** and **HYBRID** transports.
 
-On Android, QR codes can be scanned directly with the device camera. TOTP codes refresh according to their time interval, while HOTP uses a counter.
+On Android, QR codes can be scanned directly with the device camera. TOTP codes refresh according to their time interval, while HOTP uses a counter. Supported mobile/desktop combinations can use TSCR as a companion authenticator for approved cross-device workflows. This does **not** imply general-purpose USB HID security-key emulation.
 
 ### Passkeys, Browser Link, and HYBRID
 
-**TSCR Browser Link** connects a locally running desktop TSCR instance to **Chrome, Edge, or Firefox**. With an approved browser profile, users can select and fill matching Secret Vault logins, save or update credentials, request TOTP codes, fill selected HTTPS payment-card forms after TSCR verification, and use Secret Generator. Passkey operations require the appropriate WebAuthn flow and TSCR user confirmation. Generated secrets are **not automatically saved**; Save/Update is a separate approved operation. The extension does not permanently store Vault passwords, payment-card details, or TOTP secrets.
+**TSCR Browser Link** connects a locally running desktop TSCR instance to **Chrome, Edge, or Firefox**. With an approved browser profile, users can select and fill matching Secret Vault logins, save or update credentials, request HOTP/TOTP codes, fill selected HTTPS payment-card forms after TSCR verification, Complex Form Authentication, Interactive Authentication, Captcha Solver, and use Secret Generator. Passkey operations require the appropriate WebAuthn flow and TSCR user confirmation. Generated secrets are **not automatically saved**; Save/Update is a separate approved operation. The extension does not permanently store Vault passwords, payment-card details, or TOTP secrets.
 
 Initial pairing requires approval in TSCR. Later connections are normally automatic while authorization remains valid; the extension can be manually disconnected/reconnected. WebAuthn routing set to **TSCR Browser Link** differs from **System/native** mode, which delegates the request to the browser/OS and does not necessarily offer the same Passkeys or a cross-device QR option.
 
@@ -269,7 +289,7 @@ Initial pairing requires approval in TSCR. Later connections are normally automa
 
 On supported Android versions, **CXF (Credential Exchange Format)** import is a separate system-mediated Passkey transfer workflow. It is **not** the same as HYBRID QR/Bluetooth sign-in, and availability depends on Android and the source credential manager.
 
-**Browser Link status (19 October 2026):** extension **v0.4.28 TEST** is undergoing verification for all three browsers; do not assume it is already published in the browser extension stores or that every target platform has completed end-to-end tests.
+**Browser Link distribution:** v3.0.0 ZIP packages have been prepared for Chrome, Edge and Firefox. Their availability as release assets does **not** mean the extensions are already approved in browser stores or that every platform/transport has passed end-to-end testing.
 
 ---
 
@@ -307,7 +327,7 @@ The **Show QR** and **Show BarCode** controls display supported generated values
 
 ## Multilingual Runtime
 
-TSCR includes a multilingual interface system based on a local encrypted language file, database-backed language support, and fallback logic. The current locked v3.0 NLF contains **36 language objects**.
+TSCR includes a multilingual interface system based on a local encrypted language file, database-backed support and fallback logic. The v3.0 release describes **35+ supported languages**; the current locked NLF contains **36 language objects**.
 
 Supported language areas include:
 
@@ -415,9 +435,12 @@ TSCR v3.0 also uses the **`.tscrauth`** format for encrypted Authenticator backu
 
 ## Installation
 
-Visit the official TSCR website: https://tscr.x10.mx
+**Official website:** https://tscr.x10.mx
+**Official release assets:** https://github.com/DMJV-Tech/TSCR-Releases/releases
 
-### Windows — Microsoft Store
+Download the package matching your **platform and CPU architecture**. Check the README/LICENSE files bundled with standalone ZIP packages. Availability and store versions may differ during staged rollout.
+
+### Windows — Microsoft Store (Preferred)
 
 The recommended installation method for Windows 10/11 is the official Microsoft Store release:
 
@@ -427,49 +450,70 @@ Microsoft Store ID: `9NMC6V5BT3KB`
 
 Install TSCR directly through Microsoft Store. Microsoft Store provides the trusted Store installation workflow and manages delivery of Store updates.
 
-### Windows — Standalone Release
+**Rollout note:** the Store may continue offering v2.5 until the v3.0 submission is approved and published. The v3.0 standalone release is available independently on GitHub once its assets are published.
 
-A standalone Windows build is also available through the official TSCR GitHub Releases repository:
+### Windows — Standalone x64 / ARM64
 
-https://github.com/DMJV-Tech/TSCR-Releases/releases
+1. Download the matching Windows x64 or ARM64 ZIP (or standalone `TSCR.exe`) from [official releases](https://github.com/DMJV-Tech/TSCR-Releases/releases).
+2. For a ZIP, extract it to a directory of your choice.
+3. Run `TSCR.exe` and follow the first-run/login, key and licensing instructions.
+4. Use official distribution channels for subsequent updates.
 
-Typical standalone installation flow:
+### Linux — Standalone x64 / ARM64
 
-1. Download the current Windows release package.
-2. Extract the archive.
-3. Run the TSCR executable.
-4. Set your login password and personal/master key.
-5. Start protecting your files, text, folders, and secrets.
+1. Download the matching Linux x64 or ARM64 ZIP (or standalone `TSCR`) from [official releases](https://github.com/DMJV-Tech/TSCR-Releases/releases).
+2. Extract the ZIP; if necessary, grant executable permission with `chmod +x TSCR`.
+3. Run `./TSCR` in an appropriate desktop environment and complete first-run setup.
 
-### Linux — Standalone Release
+### Android — Google Play / Official APK
 
-The Linux build is available through the official TSCR GitHub Releases repository:
+**Google Play is the preferred installation and update channel once the TSCR listing is available.** Until then, or for direct distribution, use the **official signed ARM64 APK** in the TSCR GitHub Release. The direct APK has the same intended application functionality as the Play-distributed build; packaging and update delivery differ.
 
-https://github.com/DMJV-Tech/TSCR-Releases/releases
+1. Download the signed Android ARM64 APK, either directly or from the release ZIP containing the APK, README and LICENSE.
+2. Open the APK on an ARM64 Android device and permit installation from the selected source if Android requests it.
+3. Install and open TSCR; follow first-run and security instructions.
+4. Install future updates from a compatible signing source. Android generally requires the same package identity and compatible signing credentials for in-place updates.
 
-Typical installation flow:
+The **AAB** is a Google Play submission package, **not** an APK for direct installation. The Play listing/testing process is separate from GitHub availability. The iOS app is planned and is **not** included in this release.
 
-1. Download the current Linux release package.
-2. Extract the archive.
-3. Run the TSCR executable.
-4. Set your login password and personal/master key.
-5. Start protecting your files, text, folders, and secrets.
+### macOS — Experimental TEST Builds (Intel / Apple Silicon)
 
-TSCR v3.0 is developed for **Windows, Linux, macOS, Android, and iOS**, with x86_64 and ARM64/arm64 as the primary architecture targets. Individual platform builds may be published successively, so availability depends on the current release artifacts and platform.
+When published, the macOS test ZIP packages contain separate `TSCR.app` builds for Intel x86_64 and Apple Silicon ARM64. These are **experimental**, not yet fully validated macOS production builds; check the release assets before assuming they are available.
 
-For Android and other additional platform builds, use only an official TSCR distribution channel explicitly listed by the project.
+1. Download and extract the ZIP matching your Mac architecture.
+2. Open `TSCR.app`.
+3. If blocked by Gatekeeper, review the warning and, if you trust the package, use **System Settings → Privacy & Security → Open Anyway** when offered.
+
+The test bundles are not Apple Developer ID signed/notarized. **Do not disable Gatekeeper globally.** For useful testing feedback, include the Mac model, macOS version, startup behaviour and any error details.
 
 ### Browser Link — Chrome, Edge, Firefox
 
-Browser Link is distributed separately from the TSCR desktop application. Use official store listings **only after they are published** or a test/standalone package explicitly provided by the TSCR project. In a development/test ZIP, Chrome and Edge can load the corresponding unpacked extension directories using **Extensions → Developer mode → Load unpacked**. Firefox development builds can be loaded temporarily through **`about:debugging`**; temporary installations normally disappear after a browser restart.
+Browser Link is distributed separately from the main desktop application. Use official browser-store listings **once published**, or the matching ZIP package supplied by the TSCR project.
 
-Start desktop TSCR first, then approve the browser profile when prompted on first connection. Approved profiles normally reconnect automatically; a manual Connect/Disconnect action remains available.
+- **Chrome / Edge (developer installation):** extract the browser-specific ZIP, open the browser's Extensions page, enable Developer mode and use **Load unpacked** on the extracted extension directory containing `manifest.json`.
+- **Firefox (development/test):** use **`about:debugging` → This Firefox → Load Temporary Add-on** and select the extracted extension's `manifest.json`. Temporary add-ons normally disappear when Firefox restarts. Store-approved, permanently installable packages will follow the applicable browser publication process.
 
-Exact package names and version numbers depend on the current release.
+Start desktop TSCR, then approve the browser profile on the first connection. Approved profiles normally reconnect while authorization remains valid; manual Connect/Disconnect is also available. Chrome, Edge and Firefox ZIP packages are prepared as version **3.0.0**; store approval and platform compatibility remain distinct from ZIP availability.
+
+### Updates & Distribution
+
+- **Windows:** Microsoft Store updates for Store installations; TSCR's official release/update channel for standalone packages.
+- **Linux:** TSCR official release/update channel for desktop distributions.
+- **Android:** Google Play updates once available; official signed APK releases as the direct-download alternative.
+- **macOS/browser extensions:** follow the publication channel and testing status of the individual package.
+
+Use only links supplied by the official TSCR website, Stores or [TSCR-Releases](https://github.com/DMJV-Tech/TSCR-Releases/releases).
 
 ---
 
 ## Basic Usage
+
+### Home Navigation & Zoom
+
+1. Use **Home** as the starting point for Text, Files/Folders, Secret Vault, Authenticator, Secret Generator, SysInfo and EnvInfo.
+2. Select a Home tile or the corresponding menu/tray action to open that area.
+3. Use supported **zoom** gestures/controls to improve readability, particularly on mobile; availability depends on the view and device.
+4. On supported mobile screens, the TSCR logo and TOP SECRET stamp return to **Home**.
 
 ### Encrypting Text
 
@@ -586,7 +630,7 @@ A new time-limited license starts from successful activation. It does not extend
 - Treat temporary or decrypted ZIP archives as sensitive files while they exist on disk.
 - Use Hash/checksum values when you want an additional integrity check for files or archives.
 - Do not disable application login without a clear reason.
-- Regularly update TSCR when new versions are available.
+- Regularly update TSCR when new versions are available; prefer Microsoft Store or Google Play for their respective supported installations.
 - Use only official TSCR distribution and update channels published for the relevant platform, including Microsoft Store, the official TSCR GitHub Releases repository, and other explicitly designated TSCR channels.
 - Do not manually delete or reset local license/protection/application data unless you understand the consequences; the application may enter Demo, Recovery, or restricted-access state.
 - Do not rely on application restart to reset Demo access; Demo is a controlled limited-time state tied to the runtime protection workflow.
@@ -656,9 +700,9 @@ Today, TSCR is developed as a standalone proprietary security product focused on
 | GUI | 3.0.0.0 |
 
 Release: **Production Release**
-Release date: **2026-09-28**
+Release date: **2026-09-28** (project version date; publication of individual v3.0 assets may follow separately)
 
-Documentation updated: **2026-10-22**
+Documentation updated: **2026-10-29**
 
 ---
 
